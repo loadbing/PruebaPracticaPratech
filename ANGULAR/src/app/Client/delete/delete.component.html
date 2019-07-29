@@ -1,0 +1,23 @@
+<div class="container">
+        <div class="card">
+            <div class="card-header">
+                <h3>¿Esta seguro que desea eliminar el empleado?</h3>
+            </div>
+    
+            <div class="card-body">
+                <table class="table table-hover">
+                    <thead>
+                    
+                            <tr>CEDULA : {{empleado.cedula}}</tr>
+                            <tr>NOMBRES: {{empleado.nombres}}</tr>
+                            <tr>APELLIDOS: {{empleado.apellidos}}</tr>
+                            <tr>CARGO: {{empleado.cargo}}</tr>
+                            <tr><button (click)="Eliminar(empleado)" class="btn btn-danger">Eliminar</button>
+                            <button (click)="Cancelar()" class="btn btn-success">Cancelar</button></tr>
+                            
+                    </thead>
+               
+                </table>
+            </div>
+        </div>
+    </div>

@@ -1,0 +1,41 @@
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <nav class="navbar navbar-light bg-light justify-content-between">
+                    <a class="navbar-brand">Bienvenido  {{title}}</a>
+                    <a class="navbar-brand">Empleados</a>
+                    <form class="form-inline">
+                      <input #CedBuscar class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                      <button (click)="Buscar(CedBuscar.value)" class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+                    </form>
+                  </nav>
+        </div>
+
+        <div class="card-body">
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th>CEDULA</th>
+                    <th>NOMBRES</th>
+                    <th>APELLIDOS</th>
+                    <th>CARGO</th>
+                    <th>CONTRASEÑA</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr *ngFor="let items of empleados" class="text-center">
+                    <td>{{items.cedula}}</td>
+                    <td>{{items.nombres}}</td>
+                    <td>{{items.apellidos}}</td>
+                    <td>{{items.cargo}}</td>
+                    <td>{{items.password}}</td>
+                    <td>
+                        <button (click)="Editar(items)" class="btn btn-success">Editar</button>
+                        <button (click)="Eliminar(items)" class="btn btn-danger" >Eliminar</button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

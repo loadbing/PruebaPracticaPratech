@@ -1,0 +1,26 @@
+      <body>
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+                <div class="card card-signin my-5">
+                  <div class="card-body">
+                    <h5 class="card-title text-center">Iniciar Sesion</h5>
+                    <form class="form-signin" (ngSubmit)="login(Cedula.value,password.value)">
+                      <div class="form-label-group">
+                        <input #Cedula type="text" id="Cedula" class="form-control" placeholder="Cedula" required autofocus>
+                        <label for="inputPassword"></label>
+                      </div>
+        
+                      <div class="form-label-group">
+                        <input #password type="password" id="password" class="form-control" placeholder="Contraseña" required>
+                        <label for="password"></label>
+                      </div>
+                      <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Ingresar</button>
+                      <hr class="my-4">
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </body>
