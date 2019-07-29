@@ -14,4 +14,4 @@ se deberan cambiar los datasource en caso de ser requerido.
 7. Ejecutar el proyecto FrontEnd.
 8. Abrir en el navegador el localhost en el puerto 4200 (http://localhost:4200/RouteMenu)
 9. La restriccion se esta controlando por medio del sessionStorage, 
-En caso de requerir acceder usar: cedula = 1035439088, contraseÃ±a = 12345.
+En caso de requerir acceder usar: cedula = 10354, contraseña = 12345.
