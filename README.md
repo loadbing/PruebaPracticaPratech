@@ -9,6 +9,7 @@ Para el CSS se usaron clases de Bootstrap
 4. Modificar el CrossOrigin a el servidor y puerto correspondiente.  
 5. El application.propierties esta configurado con el driver de sqlserver,
 se deberan cambiar los datasource en caso de ser requerido.
+6. Abrir el Query(ScripBD.sql) en Sql Server y ejecutarlo. 
 6. Ejecutar el proyecto Backend.
 7. Ejecutar el proyecto FrontEnd.
 8. Abrir en el navegador el localhost en el puerto 4200 (http://localhost:4200/RouteMenu)
